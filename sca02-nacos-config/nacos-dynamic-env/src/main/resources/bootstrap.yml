@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        extension-configs[0]:
+          dataId: nacos-dynamic-user.properties
+          refresh: true
+        extension-configs[1]: #下标越高优先级越高，可以覆盖相同属性
+          dataId: nacos-dynamic-common.properties
+          refresh: true

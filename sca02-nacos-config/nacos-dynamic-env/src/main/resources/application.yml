@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: nacos-dynamic-env
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+# 使用nacos动态配置获取port
+#server:
+#  port: 9033
